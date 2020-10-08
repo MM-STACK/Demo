@@ -1,0 +1,31 @@
+
+.App-Main-Layout {
+  padding: 20px;
+  background-color: blueviolet; 
+  width: 100%;
+}
+
+.App-Navigation-Bar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #232f3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 90;
+  color: white;
+}
+
+.App-Content-Container {  
+  height: calc(100vh - 56px);
+  width: 100%;    
+  position: fixed;
+  top: 57px;
+  left: 0;
+  background-color: white;
+  z-index: 90;      
+}

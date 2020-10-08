@@ -1,0 +1,62 @@
+.Search-Bar {
+    padding: 10px;       
+    margin-right: 20px;
+    height: 40px;
+}
+ 
+ .Search-Bar input {
+     width: 80%;
+     height: 30px;
+     margin-right: 20px;
+ }
+
+ .Search-Bar button {
+     height: 30px;
+ }
+
+ .Applications-List-Box {
+    overflow: auto;
+    max-height: calc(100vh - 145px);
+    /* border: 1px solid blue; */
+ }
+
+ .Application-Card {
+     padding: 10px;
+     box-sizing: border-box;
+     border-bottom: 2px solid rgb(27, 84, 122);
+     margin-top: 5px;
+     
+ }
+
+ .Application-Card .Title {
+     font-weight: bold;
+ }
+
+ .Application-Card .Description {
+    font-size: 12px;
+    padding-left: 7px;
+ }
+
+ .Application-Details p {
+    font-weight: bold;
+    font-size: 12px;
+ }
+
+ .Application-Details p.Title {
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+ .Application-Details div {
+     padding-left: 0 10px;
+ }
+
+ .Application-Details .Button {    
+    width: 115px;    
+    background: #043058;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}

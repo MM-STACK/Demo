@@ -1,0 +1,63 @@
+.Main-Content {
+    width: 100%;
+}
+
+.Main-Header-Pane {
+    display: flex; 
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background: #a7cfdf; /* Old browsers */
+    background: -moz-linear-gradient(left,  #a7cfdf 0%, #23538a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #a7cfdf 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #a7cfdf 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 */
+}
+
+.Main-Details-Pane {
+    overflow: auto;
+    max-height: calc(100vh - 145px);
+}
+
+.Main-Header-Pane .Title {
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+
+.Main-Header-Pane span {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+
+.Main-Details-Card {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid rgb(51, 91, 109);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Main-Details-Card .Main-Details-Box {
+    display: flex;    
+    flex-direction: row;    
+}
+
+.Main-Details-Card .Main-Details-Box div {
+    width: 48%;
+}
+
+.Main-Details-Label {
+    font-weight: bold;
+    color: rgb(6, 36, 75);
+    padding: 8px 0; 
+}
+
+.Main-Details-Text li {
+    margin-top: 8px;
+}
+

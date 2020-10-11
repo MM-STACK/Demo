@@ -10,22 +10,11 @@ const NavigationItems = (props) => {
         // <header className="Nav-Bar">                
         <ul className="Nav-Items">
           <li className="Navigation-Item" >
-              <a 
-                href="/"                
-                className={props.Current_Tab==='Home' ? 'active' : ''}
-                // onClick={() => SetActiveTab('Home')} 
-                >Home</a>
+              <a href="/" className={props.Current_Tab==='Home' ? 'active' : ''}>Home</a>
           </li>
           <li className="Navigation-Item" >
-              <a                 
-                href="/Applications"
-                className={ props.Current_Tab==='Applications' ? 'active' : ''} 
-                // onClick={() => SetActiveTab('Applications')}  
-                >Applications</a>
-          </li>
-          <li className="Navigation-Item">
-            {/* <p>{props.Current_Tab}</p> */}
-          </li>
+              <a href="/Applications" className={ props.Current_Tab==='Applications' ? 'active' : ''}>Applications</a>
+          </li>          
         </ul>          
       // </header>  
     )

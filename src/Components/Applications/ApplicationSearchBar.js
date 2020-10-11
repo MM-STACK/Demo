@@ -9,9 +9,9 @@ const ApplicationSearchBar = (props) => {
                 type="text"           
                 value = {props.Search_Text} 
                 placeholder="Design Patterns+: HOC, API, Lazy Loading, Error Boundaries, Progressive scrolling..." 
-                onChange={(event) => props.OnChangeHandler(event.target.value)}
+                onChange={(event) => props.OnSearchTextChangedHandler(event.target.value)}
             />
-            <button onClick={() => props.OnChangeHandler('')}>Clear</button>
+            <button onClick={() => props.OnSearchTextChangedHandler('')}>Clear</button>
         </div> 
 
     )

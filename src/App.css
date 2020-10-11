@@ -1,31 +1,23 @@
-
-.App-Main-Layout {
-  padding: 20px;
-  background-color: blueviolet; 
-  width: 100%;
+.App-Main-Pane {    
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100vw - 120px);
 }
 
-.App-Navigation-Bar {
+.App-Navigation-Pane {  
   height: 56px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: auto;
+  padding-left: 20px;  
+  position: relative;
   background-color: #232f3e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  z-index: 90;
-  color: white;
+  z-index: 90;  
 }
 
-.App-Content-Container {  
+.App-Content-Pane {  
+  z-index: 90;        
   height: calc(100vh - 56px);
-  width: 100%;    
-  position: fixed;
+  width: auto;    
   top: 57px;
   left: 0;
-  background-color: white;
-  z-index: 90;      
+  background-color:#fffafa;  
 }

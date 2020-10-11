@@ -7,12 +7,11 @@ import {
 } from 'react-router-dom';
 //  Link
 
-import AsyncComponent from './HOC/AsyncComponent'
-
 import  './App.css';
-
 import NavigationItems from './Containers/NavigationBar/NaviagtionItems'
-import HomePage from './Pages/HomePage';
+import HomePage from './Containers/HomePage/HomePage';
+import ErrorPage from './Pages/ErrorPage';
+import AsyncComponent from './HOC/AsyncComponent'
 
 const ApplicationsPage = AsyncComponent(() => {
  	  return import('./Containers/Applications/ApplicationsPage');
@@ -30,22 +29,21 @@ const App = () => {
 
 
   return (
-
-      <div className="App-Main-Layout">
-        <div className="App-Navigation-Bar">
-         <NavigationItems Current_Tab={Current_Tab} />
+     <div className="App-Main-Pane">
+        <div className="App-Navigation-Pane">
+          <NavigationItems Current_Tab={Current_Tab} />
         </div>
         
-        <div className="App-Content-Container">
+        <div className="App-Content-Pane">
         <Router>
           <Switch>
             <Route path="/Applications" exact component={ApplicationsPage} />
             <Route path="/" exact component={HomePage} /> 
+            <Route path="*"  component={ErrorPage} />             
           </Switch>          
         </Router>
-        </div> 
-      </div>
-  
+        </div>       
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@
 }
  
  .Search-Bar input {
-     width: 80%;
+     width: 70%;
      height: 30px;
      margin-right: 20px;
  }
@@ -16,11 +16,10 @@
 
  .Applications-List-Box {
     overflow: auto;
-    max-height: calc(100vh - 145px);
-    /* border: 1px solid blue; */
+    max-height: calc(100vh - 145px);             
  }
 
- .Application-Card {
+ .Application-Card {     
      padding: 10px;
      box-sizing: border-box;
      border-bottom: 2px solid rgb(27, 84, 122);
@@ -28,11 +27,11 @@
      
  }
 
- .Application-Card .Title {
+ .Application-Card .Card-Title {
      font-weight: bold;
  }
 
- .Application-Card .Description {
+ .Application-Card .Card-Description {
     font-size: 12px;
     padding-left: 7px;
  }

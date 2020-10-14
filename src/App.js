@@ -37,9 +37,9 @@ const App = () => {
         <div className="App-Content-Pane">
         <Router>
           <Switch>
-            <Route path="/Applications" exact component={ApplicationsPage} />
+            <Route path="/Applications" component={ApplicationsPage} />
             <Route path="/" exact component={HomePage} /> 
-            <Route path="*"  component={ErrorPage} />             
+            <Route component={ErrorPage} />             
           </Switch>          
         </Router>
         </div>       

@@ -1,7 +1,6 @@
 import React from 'react'
 import './HomePage.css'
 import AWS_Image from '../../Assets/images/AWS-Developer-Associate.png'
-//../src/Assets/images/AWS-Developer-Associate.png'
 
 const HomePage = () => {
     const backgroundImage = {  
@@ -32,7 +31,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="Main-Details-Text">
-                        Welcome to my website. My name is Mahesh and I'm a Senior Full Stack Developer based in Toronto, Canada. I enjoy designing and building web applications.                                                                                        
+                        My name is Mahesh and I'm a Senior Full Stack Developer based in Toronto, Canada. I enjoy designing and building web applications.                                                                                        
                         <br></br>
                         <br></br>
                         This is a simple <b>ReactJS App</b> running on <b>NodeJS server</b>, hosted on <b>AWS EC2</b> with <b>NGINX</b> web server as reverse proxy.                                        

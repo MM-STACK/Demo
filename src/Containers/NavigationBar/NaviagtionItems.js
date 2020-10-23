@@ -2,7 +2,7 @@ import React from 'react';
 import './Navigation.css';
 
 
-const NavigationItems = (props) => {
+const navigationItems = (props) => {
 
     // console.log('Navigation Items')
 
@@ -24,4 +24,4 @@ const NavigationItems = (props) => {
 
 
 
-export default NavigationItems;
+export default navigationItems;

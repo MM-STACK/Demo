@@ -27,7 +27,6 @@ const App = () => {
     Current_Tab='Applications'
   } 
 
-
   return (
      <div className="App-Main-Pane">
         <div className="App-Navigation-Pane">
@@ -35,7 +34,7 @@ const App = () => {
         </div>
         
         <div className="App-Content-Pane">
-        <Router>
+        <Router basename='/my-demo/'>
           <Switch>
             <Route path="/Applications" component={ApplicationsPage} />
             <Route path="/" exact component={HomePage} /> 

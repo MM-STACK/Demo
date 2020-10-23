@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState }  from 'react';
 
 import './ApplicationsPage.css'
 
@@ -9,7 +9,7 @@ import ApplicationsData from '../../Assets/DataFiles/ApplicationsData';
 
 const ApplicationsPage = () => {
     
-    const [Application_Selected_ID,SetApplicationID]=useState(0);
+    const [Application_Selected_ID,setApplicationID]=useState(0);
     const [Filtered_Data,setApplicationsData]=useState([]);
     const [Search_Text,setSearchText]=useState('');
 
@@ -21,9 +21,9 @@ const ApplicationsPage = () => {
             const fa = d.filter(item => String(item.technology).toLowerCase().includes(Search_Text.toLowerCase()) )
             setApplicationsData(fa)
             if (fa.length) {
-                SetApplicationID(fa[0].id-1)
+                setApplicationID(fa[0].id-1)
             } else {
-                SetApplicationID(0)
+                setApplicationID(0)
             }
             
         }
@@ -36,7 +36,7 @@ const ApplicationsPage = () => {
                     data={Filtered_Data} 
                     Search_Text= {Search_Text}
                     OnSearchTextChangedHandler = {setSearchText}
-                    OnClickHandler={SetApplicationID} 
+                    OnClickHandler={setApplicationID} 
              />
             </div>
             

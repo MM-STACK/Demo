@@ -6,7 +6,7 @@ import './ApplicationStyles.css'
  
 const ApplicationsList = (props) => {
     const applications_details = [...props.data];
- 
+
     return (    
         <>              
             <ApplicationSearchBar 

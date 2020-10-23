@@ -4,7 +4,7 @@ const ApplicationsData=[
         title:"Movie Reviews",
         description:"To demonstrate MERN stack implementation.",
         technology: "MERN Stack (MongoDB, Express JS, React, Node JS)",
-        concepts: "Lazy Loading, Progressive Scrolling",
+        concepts: "State Management, Progressive Scrolling",
         url:"http://localhost/Movie_Reviews"
     },
     {

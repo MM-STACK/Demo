@@ -14,7 +14,6 @@ import HomePage from './Containers/HomePage/HomePage';
 import ErrorPage from './Pages/ErrorPage';
 import AsyncComponent from './HOC/AsyncComponent'
 
-
 const App = () => { 
   let Current_Tab='Home'
 

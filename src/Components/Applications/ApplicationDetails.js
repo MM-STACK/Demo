@@ -4,7 +4,7 @@ const ApplicationDetails = (props) => {
 
 
     const OpenApplication = (data) => {
-        if (process.env.NODE_ENV==='Production') {
+        if (process.env.NODE_ENV==='production') {
             window.open(data.prd_url);
         } else {
             window.open(data.url);

@@ -8,7 +8,7 @@ const ApplicationsData=[
         technology: "ReactJS, UseState",
         tags: "HOC (Higher Order Components), State Management",        
         url:"http://localhost:7001",
-        prd_url:"/hoc-counter/"
+        prd_url:"/Counter/"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const ApplicationsData=[
         description:"To demonstarte state management in simplest form.",
         technology: "MongoDB, Express JS, React, Node JS",      
         url:"http://localhost:7002",  
-        prd_url:"/state-management/"        
+        prd_url:"/Appointments/"        
     },
     {
         id: 3,

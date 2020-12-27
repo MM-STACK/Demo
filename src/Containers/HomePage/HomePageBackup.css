@@ -1,5 +1,5 @@
 .Main-Content {
-    width: 100%;
+    width: 100%;    
 }
 
 .Main-Header-Pane {
@@ -17,11 +17,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 */
 }
 
-.Main-Details-Pane {
-    overflow: auto;
-    max-height: calc(100vh - 145px);
-}
-
+/* 
 .Main-Header-Pane .Title {
     font-size: 30px;
     color: whitesmoke;
@@ -31,15 +27,20 @@
 .Main-Header-Pane span {
     font-weight: bold;
     color: whitesmoke;
-}
+} */
 
+
+/* .Main-Details-Pane {
+    overflow: auto;
+    max-height: calc(100vh - 145px);
+} 
 
 .Main-Details-Card {
     margin: 15px;
     padding: 10px;
     border: 1px solid rgb(51, 91, 109);
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 .Main-Details-Card .Main-Details-Box {
@@ -51,13 +52,55 @@
     width: 48%;
 }
 
+*/
+
 .Main-Details-Label {
     font-weight: bold;
     color: rgb(6, 36, 75);
     padding: 8px 0; 
 }
 
-.Main-Details-Text li {
-    margin-top: 8px;
+.Main-Details-Text ul,  .Main-Details-Text p {
+    margin-top: 0;
 }
+
+/****************************/
+.Main-Details-Flex-Box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;        
+    max-height: calc(100vh - 145px);
+    margin: 0 10px;    
+    overflow: auto;
+    font-size: 1rem;
+}
+
+.Main-Details-Flex-Box > div {
+    flex: 0 48%; 
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 91, 109);
+    border-radius: 5px;  
+    margin: 10px;  
+    box-shadow: 6px 6px 4px #888888; 
+}
+
+.Main-Details-Item {
+    width: auto;        
+    padding: 10px;        
+
+}
+
+.Main-Details-Text {
+    padding-left: 10px;
+}
+
+#UL_Technologies {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 10px;    
+}
+
 

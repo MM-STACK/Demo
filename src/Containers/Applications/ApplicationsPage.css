@@ -1,21 +1,30 @@
 .Applications-Tab-Container {
-    display: flex;
-    justify-content: space-between;    
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;        
     box-sizing: border-box;
-    border: 1px white transparent;
-    max-height: calc(100vh - 145px);
+    /* border: 1px white transparent; */
+    /* border-bottom: 2px solid #bababa; */
+    height: 100%;
+    /* max-height: calc(100vh - 57px);     */
+        
+    /* border: 2px solid red ; */
+    /* padding-bottom: 10px; */
 }
 
 .Applications-List-Container {
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-    border-right: 1px solid #bababa;    
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 40%;
+    padding: 10px 0 10px 10px; 
+    border-right: 2px solid #bababa;            
+    /* border:3px solid orange */
 }
 
 .Applications-Details-Container {
-    width: 50%;
-    height: 100%;    
-    padding: 10px;            
+    flex: 0 1 60%;       
+    padding: 10px 0 0 15px;      
+    overflow: auto;
+    /* border: 2px solid purple;       */
 }
 

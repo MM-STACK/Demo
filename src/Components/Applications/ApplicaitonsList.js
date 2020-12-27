@@ -16,7 +16,7 @@ const ApplicationsList = (props) => {
 
              <div className="Applications-List-Box">
                 {
-                    applications_details.map( (item,index) => (
+                    applications_details.map( (item,index) => (  item.hidden ? null :                      
                     <div 
                         className="Application-Card" 
                         key={item.id} 

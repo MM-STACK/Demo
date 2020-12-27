@@ -1,3 +1,13 @@
+  .Navigation-Pane {    
+    padding-left: 20px;  
+    position: relative;
+    /* background-color: #232f3e; */
+    background-color: transparent;
+    z-index: 90;  
+    display: inline-block;
+    width: 60%;    
+  }
+
   .Nav-Items {
     margin: 0;
     padding: 0;
@@ -9,8 +19,7 @@
   
   .Navigation-Item {
     margin: 0;
-    box-sizing: border-box;
-    display: flex;
+    box-sizing: border-box;    
     height: 100%;
     width: auto;
     align-items: center;
@@ -45,7 +54,7 @@
     width: 0;
     height: 75px;
     left: -50%;
-    top: 4px;
+    top: 3px;
     border-left: 7px outset transparent;
     border-right: 7px solid transparent;
     border-bottom: 10px solid #ffffff;

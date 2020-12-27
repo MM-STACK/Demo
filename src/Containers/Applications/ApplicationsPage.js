@@ -18,7 +18,7 @@ const ApplicationsPage = () => {
             setApplicationsData([...ApplicationsData])
         } else {
             const d = [...ApplicationsData];
-            const fa = d.filter(item => String(item.technology).toLowerCase().includes(Search_Text.toLowerCase()) )
+            const fa = d.filter(item => String(item.technology).toLowerCase().includes(Search_Text.toLowerCase()) || String(item.tags).toLowerCase().includes(Search_Text.toLowerCase()) )
             setApplicationsData(fa)
             if (fa.length) {
                 setApplicationID(fa[0].id-1)

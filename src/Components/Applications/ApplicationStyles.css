@@ -16,15 +16,14 @@
 
  .Applications-List-Box {
     overflow: auto;
-    max-height: calc(100vh - 145px);             
+    /* max-height: calc(100vh - 57px);*/
  }
 
  .Application-Card {     
      padding: 10px;
      box-sizing: border-box;
      border-bottom: 2px solid rgb(27, 84, 122);
-     margin-top: 5px;
-     
+     margin-top: 5px;     
  }
 
  .Application-Card .Card-Title {
@@ -32,22 +31,23 @@
  }
 
  .Application-Card .Card-Description {
-    font-size: 12px;
-    padding-left: 7px;
+    font-size: smaller;
+    /* padding-left: 7px; */
  }
 
  .Application-Details p {
     font-weight: bold;
-    font-size: 12px;
+    font-size: smaller;
  }
 
  .Application-Details p.Title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: medium;
  }
 
  .Application-Details div {
-     padding-left: 0 10px;
+     padding: 0 10px 0 0;
+     font-size: smaller;
  }
 
  .Application-Details .Button {    
@@ -58,4 +58,10 @@
     color: white;
     font-weight: bold;
     cursor: default;
+}
+
+
+.Application-Details .Text {
+    white-space: pre-line; /* \n new line */
+    /* white-space: pre-wrap; */ /* \n new line and \t tabs */
 }

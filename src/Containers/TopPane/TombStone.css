@@ -1,0 +1,37 @@
+.TombStone-Pane {      
+    position: relative;    
+    background-color: transparent;
+    z-index: 90;  
+    display: inline-block;
+    width: 40%;
+    padding-left: 300px;
+    padding-top: 5px;
+  }
+  
+.TombStone-Pane .AWSImage {
+    width: 45px;
+    height: 45px;          
+    vertical-align: middle;
+}
+
+.TombStone-Pane div {
+    /* border: 1px solid red; */
+    background-color: transparent;
+    color: whitesmoke;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 1.3rem;        
+    max-height: 50px;     
+    display: inline-block;        
+    text-align: left;    
+    
+}
+
+.TombStone-Pane div span {
+    display: block;
+}
+
+.TombStone-Pane div span.SmallText { 
+    font-size: .8rem;        
+}
+

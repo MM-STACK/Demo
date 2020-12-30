@@ -7,7 +7,7 @@ const ApplicationDetails = (props) => {
         if (process.env.NODE_ENV==='production') {
             window.open(data.prd_url);
         } else {
-            window.open(data.url);
+            window.open(data.dev_url);
         }
         // alert(url);
         // return;

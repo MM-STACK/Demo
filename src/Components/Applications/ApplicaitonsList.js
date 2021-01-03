@@ -2,15 +2,14 @@ import React  from 'react';
 import ApplicationSearchBar from './ApplicationSearchBar'
 import './ApplicationStyles.css'
 
- 
- 
+
 const ApplicationsList = (props) => {
     const applications_details = [...props.data];
-
+   
     return (    
         <>              
             <ApplicationSearchBar 
-                Search_Text={props.Search_Text} 
+                searchText={props.searchText} 
                 OnSearchTextChangedHandler={props.OnSearchTextChangedHandler}
             />
 

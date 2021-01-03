@@ -1,24 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 
-const navigationItems = (props) => {
+const NavigationItems = () => {
+  let clickedTab='Home';
 
-    // console.log('Navigation Items')
+  if (String(window.location.href).includes("/applications")) {
+    clickedTab='Applications'
+  } 
 
-      return (     
-        <div className="Navigation-Pane">
-          <ul className="Nav-Items">
-            <li className="Navigation-Item" >
-                <a href="/" className={props.Current_Tab==='Home' ? 'active' : ''}>Home</a>
-            </li>
-            <li className="Navigation-Item" >
-                <a href="/Applications" className={ props.Current_Tab==='Applications' ? 'active' : ''}>Applications</a>
-            </li>          
-          </ul>                  
-        </div>   
-        
-    )
+  const [currentTab, setCurrentTab]=useState(clickedTab);
+
+  return ( 
+
+      <nav>
+      <ul className="nav-items">
+        <li 
+          className="nav-item" 
+          onClick={() => {setCurrentTab('Home')}} >
+            <Link              
+              to="" 
+              className={currentTab === 'Home' ? 'active' : ''}>Home</Link>
+        </li>
+        <li 
+          className="nav-item"
+          onClick={() => {setCurrentTab('Applications')}} 
+        >
+           <Link               
+              to="/applications"               
+              className={currentTab === 'Applications' ? 'active' : ''}>Applications</Link>
+        </li>
+      </ul>
+    </nav>  
+
+
+
+
+  )
 }
 
-export default navigationItems;
+export default NavigationItems;

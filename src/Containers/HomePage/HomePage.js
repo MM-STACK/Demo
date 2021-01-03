@@ -2,17 +2,7 @@ import React from 'react'
 import './HomePage.css'
 // import AWS_Image from '../../Assets/images/AWS-Developer-Associate.png'
 
-const HomePage = () => {
-
-    // const backgroundImage = {          
-    //     backgroundImage: "url(" + AWS_Image + ")",
-    //     backgroundPosition: 'left',
-    //     backgroundSize: 'contain',
-    //     backgroundRepeat: 'no-repeat',   
-    //     height: "100%",
-    //     width: "100%",        
-    // }
-
+const HomePage = (props) => {
     return(
         <div className="Main-Content" >                       
             <div className="Main-Details-Flex-Box">
@@ -22,13 +12,6 @@ const HomePage = () => {
                         </div>
                         <div className="Main-Details-Text"> 
                                 <p>My name is <b>Mahesh</b> and I'm a <b>Senior Full Stack Developer</b> based in Toronto, Canada. I enjoy designing and building web applications.</p>
-                                                                
-                                {/* <p>As much as I like working in JavaScript and Javascript based Libraries/frameworks. My new found interest is Amazon Web Services and my favorite AWS service is Cloudformation aka Infrastructure as code.  
-                                    Being a developer I am excited to explore AWS Serverless services such as Amazon API Gateway, AWS Lambda, Amazon DynamoDB (NoSql) and AWS Step functions to orchestrate CI/CD.
-                                </p> */}
-                                    {/* (continuous integration and continuous delivery) */}
-                                    {/* Just imagine the freedom for developers to focus on their core product without worrying about servers. */}
-                                
                                 <p>
                                     I am a AWS Certified Developer (Associate certification) and continuously upscaling my skill sets by practicing deployment of web applications on AWS EC2 and by exploring AWS Serverless services such as 
                                     Amazon API Gateway, AWS Lambda, Amazon DynamoDB (NoSql) and AWS Step functions to orchestrate CI/CD.
@@ -91,7 +74,7 @@ const HomePage = () => {
                         </div>
                         <div className="Main-Details-Text">    
                             <div className="Main-Details-Box">
-                                <div style={{"display": "inline-flex", "margin-right":"15px"}}>
+                                <div style={{"display": "inline-flex", "marginRight":"15px"}}>
                                     <a href="https://www.youracclaim.com/badges/1b9055d1-8ccf-44b7-8d70-5eb465964ca8/public_url" target="_new">AWS Certified Developer - Associate</a>
                                     <br/>                                    
                                 </div>

@@ -31,23 +31,22 @@
  }
 
  .Application-Card .Card-Description {
-    font-size: smaller;
-    /* padding-left: 7px; */
+    font-size: 0.9rem;    
  }
 
  .Application-Details p {
     font-weight: bold;
-    font-size: smaller;
+    font-size: 1rem;
  }
 
  .Application-Details p.Title {
     font-weight: bold;
-    font-size: medium;
+    font-size: 1.2rem;
  }
 
  .Application-Details div {
      padding: 0 10px 0 0;
-     font-size: smaller;
+     font-size: 0.9rem;
  }
 
  .Application-Details .Button {    

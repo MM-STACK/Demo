@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 
 import './ApplicationsPage.css'
 
@@ -7,46 +7,52 @@ import ApplicationDetails from '../../Components/Applications/ApplicationDetails
 import ApplicationsData from '../../Assets/DataFiles/ApplicationsData';
 
 
-const ApplicationsPage = () => {
-    
-    const [Application_Selected_ID,setApplicationID]=useState(0);
-    const [Filtered_Data,setApplicationsData]=useState([]);
-    const [Search_Text,setSearchText]=useState('');
+const ApplicationsPage = (props) => {
+   
+    const [filteredData,setApplicationsData]=useState([]);
+    const [applicationSelId,setApplicationId]=useState(0);
+    const [searchText,setSearchText]=useState('');    
 
     useEffect(()=>{
-        if(Search_Text==='' || Search_Text.length < 3 ) {
+        if(searchText==='' ) {
             setApplicationsData([...ApplicationsData])
         } else {
             const d = [...ApplicationsData];
-            const fa = d.filter(item => String(item.technology).toLowerCase().includes(Search_Text.toLowerCase()) || String(item.tags).toLowerCase().includes(Search_Text.toLowerCase()) )
+            const fa = d.filter(item => String(item.technology).toLowerCase().includes(searchText.toLowerCase()) || String(item.tags).toLowerCase().includes(searchText.toLowerCase()) )
+
             setApplicationsData(fa)
             if (fa.length) {
-                setApplicationID(fa[0].id-1)
+                setApplicationId(fa[0].id-1)
             } else {
-                setApplicationID(0)
+                setApplicationId(0)
             }
             
         }
-    },[Search_Text])
+    },[searchText])
+    
 
     return (
         <div className="Applications-Tab-Container">
             <div className="Applications-List-Container">
                 <ApplicationsList  
-                    data={Filtered_Data} 
-                    Search_Text= {Search_Text}
+                    data={filteredData} 
+                    searchText= {searchText}
                     OnSearchTextChangedHandler = {setSearchText}
-                    OnClickHandler={setApplicationID} 
+                    OnClickHandler={setApplicationId} 
              />
             </div>
             
             <div className="Applications-Details-Container">
                 <ApplicationDetails 
-                    data={ ApplicationsData[Application_Selected_ID]}
+                    data={ ApplicationsData[applicationSelId]}
                 />
             </div> 
         </div>
     )
+
+
+
+
 }
 
 

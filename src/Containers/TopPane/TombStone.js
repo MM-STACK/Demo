@@ -2,14 +2,7 @@ import React from 'react';
 import './TombStone.css';
 import AWS_Image from '../../Assets/images/AWS-Developer-Associate.png';
 
-
-
-
 const tombStone = (props) => {
-
-
-    // console.log('Navigation Items')
-
     const backgroundImage = {          
         backgroundImage: "url(" + AWS_Image + ")",
         backgroundPosition: 'center',
@@ -24,8 +17,7 @@ const tombStone = (props) => {
             <div alt="" title="AWS Certified Developer - Associate" style={backgroundImage}>&nbsp;</div>      
 
             <div>
-                <span>Mahesh Pantangi</span>                
-                {/* <span className="SmallText">AWS Certified Developer - Associate</span> */}
+                <span>Mahesh Pantangi</span>                                
                 <span className="SmallText">Senior Full Stack Developer</span>
             </div>                
         </div> 

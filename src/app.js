@@ -1,4 +1,5 @@
-import React  from 'react';
+import React from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,43 +8,44 @@ import {
 } from 'react-router-dom';
 //  Link
 
-import  './App.css';
+import './App.css';
 import NavigationItems from './Containers/TopPane/NaviagtionItems';
 import TombStone from './Containers/TopPane/TombStone'
 import HomePage from './Containers/HomePage/HomePage';
 import ErrorPage from './Pages/ErrorPage';
+
+// import ApplicationsPage from './Containers/Applications/ApplicationsPage';
 import AsyncComponent from './HOC/AsyncComponent'
 
-const App = () => { 
-  let Current_Tab='Home'
-
+const App = () => {
+  
+  //lazy loading  
   const ApplicationsPage = AsyncComponent(() => {
-      return import('./Containers/Applications/ApplicationsPage');
-    }
-  )
+    return import('./Containers/Applications/ApplicationsPage');
+  })
 
-  if (String(window.location.href).includes("/Applications")) {
-    Current_Tab='Applications'
-  } 
-
+  // basename='/demo'
   return (
-     <div className="App-Main-Pane">
-       <div className="App-Top-Pane">
-          <NavigationItems Current_Tab={Current_Tab} />          
-          <TombStone  />          
-       </div>
+    <Router >
+      <div className="App-Main-Pane">
+        <div className="App-Top-Pane">
+          <NavigationItems />
+          <TombStone />
+        </div>
 
-        
+        {/* component={HomePage}  */}
+
+        {/* render={(props) => (<Dashboard {...props} isAuthed={true} /> )} */}
+
         <div className="App-Content-Pane">
-          <Router basename='/demo/'>
-            <Switch>
-              <Route path="/Applications" component={ApplicationsPage} />
-              <Route path="/" exact component={HomePage} /> 
-              <Route component={ErrorPage} />             
-            </Switch>          
-          </Router>
-        </div>       
-    </div>
+          <Switch>
+            <Route path="/applications" component={ApplicationsPage}/>
+            <Route path="/" exact component={HomePage} />
+            <Route component={ErrorPage} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

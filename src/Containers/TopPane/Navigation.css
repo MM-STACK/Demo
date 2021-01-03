@@ -1,4 +1,4 @@
-  .Navigation-Pane {    
+  nav {    
     padding-left: 20px;  
     position: relative;
     /* background-color: #232f3e; */
@@ -8,7 +8,7 @@
     width: 60%;    
   }
 
-  .Nav-Items {
+  .nav-items {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,7 +17,7 @@
     height: 100%;
   }
   
-  .Navigation-Item {
+  .nav-item {
     margin: 0;
     box-sizing: border-box;    
     height: 100%;
@@ -25,7 +25,7 @@
     align-items: center;
   }
   
-  .Navigation-Item a {
+  .nav-item a {
     color: #ddd;
     text-decoration: none; 
     height: 100%;
@@ -34,21 +34,27 @@
     box-sizing: border-box;
     display: block;
     font-size: 20px;
+    /* cursor: pointer; */
     
   }
   
-  .Navigation-Item a:hover,
-  .Navigation-Item a:active {  
-    border-bottom: 4px solid orangered;
+  .nav-item a:hover,
+  .nav-item a.active {  
+    border-bottom: 4px solid orangered;    
+    /* cursor: pointer; */
+    /* pointer-events: none; */
+  }
+  
+  .nav-item a:hover {
     color: orangered;
   }
-  
-  .Navigation-Item a.active {
+  .nav-item a.active {
     color: orange;
     border-bottom: 4px solid transparent;
+    pointer-events: none;
   }
   
-  .Navigation-Item a.active:after {
+  .nav-item a.active:after {
     content: '';
     position: relative;
     width: 0;

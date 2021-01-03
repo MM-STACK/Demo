@@ -3,28 +3,20 @@
     flex-direction: row;
     justify-content: space-between;        
     box-sizing: border-box;
-    /* border: 1px white transparent; */
-    /* border-bottom: 2px solid #bababa; */
     height: 100%;
-    /* max-height: calc(100vh - 57px);     */
-        
-    /* border: 2px solid red ; */
-    /* padding-bottom: 10px; */
 }
 
 .Applications-List-Container {
     display: flex;
     flex-direction: column;
-    flex: 0 1 40%;
+    flex: 0 1 50%;
     padding: 10px 0 10px 10px; 
-    border-right: 2px solid #bababa;            
-    /* border:3px solid orange */
+    border-right: 2px solid #bababa;                
 }
 
 .Applications-Details-Container {
-    flex: 0 1 60%;       
+    flex: 0 1 50%;       
     padding: 10px 0 0 15px;      
     overflow: auto;
-    /* border: 2px solid purple;       */
 }
 

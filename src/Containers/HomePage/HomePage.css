@@ -13,12 +13,15 @@
 }
 
 .Main-Details-Flex-Box > div {
-    flex: 0 48%; 
+    flex: 0 46%; 
+    
     box-sizing: border-box;
-    border: 1px solid rgb(51, 91, 109);
+    /* border: 1px solid rgb(51, 91, 109);      */
     border-radius: 5px;  
-    margin: 10px;  
-    box-shadow: 6px 6px 4px #888888; 
+    margin: 20px;  
+    /* box-shadow: 6px 6px 4px #888888;   */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2) ;
+    
 }
 
 .Main-Details-Item {
